@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<struts>
+
+    
+     <package name="default" extends="struts-default">  
+       <action name="search" class="controller.LIBBAction" method="search">  
+           <result>/page.jsp</result>  
+        </action>  
+        <action name="list" class="controller.LIBBAction" method="list">  
+           <result>/hello.jsp</result>  
+        </action> 
+        <action name="delete" class="controller.LIBBAction" method="delete">  
+           <result>/hello.jsp</result>  
+        </action>  
+         <action name="insert" class="controller.LIBBAction" method="insert">  
+           <result>/insert.jsp</result>  
+        </action> 
+ 
+         <action name="back" class="controller.LIBBAction" method="back">  
+           <result>/hello.jsp</result>  
+        </action> 
+   </package>
+
+
+</struts>
